@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500;600&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background-color: #efefef;
+      }
+      .head {
+        margin-top: 1rem;
+      }
+      .form {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .btn {
+        width: 150px;
+        font-family: "Anek Telugu", sans-serif;
+        font-weight: 600;
+        font-size: medium;
+        padding-top: 8px;
+        margin-bottom: 20px;
+        background: linear-gradient(45deg, #e56b6f, #6d597a);
+        border: none;
+        box-shadow: 1px 1px 1px #c7f9cc;
+        color: #c7f9cc;
+      }
+
+      .btn:focus,
+      .btn:hover {
+        transition: 0.5s;
+        transform: translate(0.25em, 0.2em);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center" class="head">WD101 - Level 8</h1>
+    <div class="box">
+      <form class="form" id="form">
+        <h2 align="center">Registration Form</h2>
+        <br><br><br>
+        <div class="input-group">
+          <input
+            value=""
+            class="input"
+            type="text"
+            name="name"
+            id="name"
+            required="required"
+            placeholder="Your Name"
+            style="border: 0"
+          />
+          <label for="text-1542372332072">Your Name</label>
+          <div class="req-mark">!</div>
+        </div>
+        <div class="input-group">
+          <input
+            value=""
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            required="required"
+            placeholder="Your Email"
+            style="border: 0"
+          />
+          <label for="text-1542372332072">Your Email</label>
+          <div class="req-mark">!</div>
+        </div>
+        <div class="input-group">
+          <input
+            value=""
+            class="input"
+            type="password"
+            name="password"
+            id="password"
+            required="required"
+            placeholder="Your Email"
+            style="border: 0"
+          />
+          <label for="text-1542372332072">Your Password</label>
+          <div class="req-mark">!</div>
+        </div>
+        <div class="input-group">
+          <input
+            value=""
+            class="input"
+            type="date"
+            name="dob"
+            id="dob"
+            required="required"
+            placeholder="Your DOB"
+            style="border: 0 !important;"
+          />
+          <label for="text-1542372332072">Your DOB</label>
+          <div class="req-mark">!</div>
+        </div>
+
+        <div>
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="checkbox">Accept Terms & Conditions</label>
+        </div>
+<br>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+<br>
+<center>
+    <div class="entry">
+        <h2 class="subHead">Entries</h2>
+        <div id="tableDiv"></div>
+      </div>
+</center>
+    
+  </body>
+</html>
