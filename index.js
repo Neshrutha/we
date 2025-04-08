@@ -42,6 +42,7 @@ const displayEntries = () => {
     <th class="th">Password</th>
     <th class="th">Dob</th>
     <th class="th">Accepted terms?</th>
+    <th class="th">Accepted1 terms?</th>
   </tr>
     ${rows}
   </table>`;
